@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dark Pattern Scanner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo-title">
+      <span class="icon">🛡️</span>
+      <h3>Dark Pattern Advisor</h3>
+    </div>
+    <span class="badge">CCPA 2023</span>
+  </div>
+
+  <div class="content">
+    <button id="scanBtn" class="btn-primary">Scan Active Page</button>
+    <button id="clearBtn" class="btn-secondary">Clear Overlays</button>
+
+    <div id="statusBox" class="status-box hidden">
+      Scanning page DOM elements...
+    </div>
+
+    <div id="resultsCard" class="card hidden">
+      <div class="score-row">
+        <div>
+          <div class="label">Compliance Risk Score</div>
+          <div id="scoreVal" class="score-val">0 / 100</div>
+        </div>
+        <div id="riskBadge" class="risk-badge">Low Risk</div>
+      </div>
+
+      <div class="findings-list">
+        <div class="section-title">Detected Findings (<span id="countVal">0</span>)</div>
+        <div id="findingsContainer" class="findings-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="http://localhost:5173" target="_blank" class="footer-link">Open Compliance Dashboard ↗</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

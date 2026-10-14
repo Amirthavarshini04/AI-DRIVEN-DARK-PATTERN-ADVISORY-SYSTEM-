@@ -1,0 +1,38 @@
+[
+  {
+    "sample_id": "EN-001",
+    "platform": "QuickCommerce-Demo",
+    "language": "en",
+    "text_snippet": "Hurry! Only 2 items left in stock - Order within 03m 12s!",
+    "context": "Product PDP Page Banner",
+    "dark_pattern_category": "False Urgency",
+    "ccpa_reference": "Annexure 1 - Clause 3(a)",
+    "severity": "High",
+    "annotator_id": "ANNOTATOR-01",
+    "split": "train"
+  },
+  {
+    "sample_id": "EN-002",
+    "platform": "FashionRetail-Demo",
+    "language": "en",
+    "text_snippet": "Convenience fee ₹49 added automatically at final checkout",
+    "context": "Cart Payment Summary",
+    "dark_pattern_category": "Drip Pricing",
+    "ccpa_reference": "Annexure 1 - Clause 3(h)",
+    "severity": "Critical",
+    "annotator_id": "ANNOTATOR-02",
+    "split": "train"
+  },
+  {
+    "sample_id": "EN-003",
+    "platform": "TravelBooking-Demo",
+    "language": "en",
+    "text_snippet": "No thanks, I prefer paying full price and losing savings",
+    "context": "Discount Modal Opt-out",
+    "dark_pattern_category": "Confirm Shaming",
+    "ccpa_reference": "Annexure 1 - Clause 3(c)",
+    "severity": "Medium",
+    "annotator_id": "ANNOTATOR-01",
+    "split": "test"
+  }
+]

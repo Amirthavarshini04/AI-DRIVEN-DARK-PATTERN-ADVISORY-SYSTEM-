@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>StayEasy - Sunset Resort Goa (DARK PATTERN TEST PAGE)</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:760px;margin:20px auto;padding:0 12px;color:#222}
+.red{color:#c00;font-weight:bold}.card{border:1px solid #ccc;padding:12px;margin:12px 0;border-radius:6px}
+.old{text-decoration:line-through;color:#888}.small{font-size:11px;color:#999}
+#modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9}
+#modal div{background:#fff;width:340px;margin:120px auto;padding:20px;text-align:center;border-radius:8px}
+.yes{background:#0a8;color:#fff;font-size:18px;padding:12px 24px;border:0;border-radius:6px}
+.no{font-size:9px;color:#bbb;background:none;border:0;cursor:pointer}
+</style></head><body>
+<h1>Sunset Resort, Goa</h1>
+<p>Beachfront hotel, 4 star. Free breakfast.</p>
+
+<!-- FALSE URGENCY -->
+<div class="card"><span class="red">Hurry! Deal ends in <span id="t">10:00</span></span><br>
+<span class="red">Only 2 rooms left at this price!</span></div>
+
+<!-- DECEPTIVE COUNTING (inserted late by JavaScript) -->
+<div class="card" id="late"></div>
+
+<!-- PRICE / BAIT -->
+<div class="card"><h2><span class="old">&#8377;9,999</span> &#8377;3,499 <small>per night</small></h2>
+<p>65% OFF today only! + taxes &amp; fees</p></div>
+
+<!-- BASKET SNEAKING + TRICK WORDING -->
+<div class="card"><h3>Add-ons</h3>
+<label><input type="checkbox" checked> Travel insurance (&#8377;199)</label><br>
+<label><input type="checkbox" checked> Donate &#8377;20 to charity</label><br>
+<label><input type="checkbox" checked> Uncheck this box if you prefer not to not receive offers by email</label></div>
+
+<!-- DISGUISED AD (no Ad / Sponsored label) -->
+<div class="card"><b>Recommended for you:</b> Palm Beach Resort, Candolim - from &#8377;2,999. <a href="#">Book now</a></div>
+
+<!-- SUBSCRIPTION TRAP / SAAS BILLING -->
+<div class="card"><h3>StayEasy Prime</h3>
+<p>Start your FREE 7-day trial. Auto-renews at &#8377;999/month unless cancelled. To cancel, call support between 10am and 11am on weekdays.</p>
+<p class="small">You will be charged to the card on file. No renewal reminder will be sent.</p></div>
+
+<!-- FORCED ACTION -->
+<div class="card"><p>To continue booking, you must allow access to your contacts and location.</p><button>Allow and continue</button></div>
+
+<!-- DRIP PRICING: fees only at the last step -->
+<div class="card"><h3>Payment - Step 4 of 4</h3>
+<p>Room &#8377;3,499<br>Convenience fee &#8377;349<br>Service fee &#8377;199<br>Taxes &#8377;420<br>Travel insurance &#8377;199<br>Donation &#8377;20<br><b>Total &#8377;4,686</b></p></div>
+
+<!-- CONFIRM SHAMING + NAGGING popup -->
+<div id="modal"><div><h2>Wait! Get 10% off</h2><p>Join our newsletter.</p>
+<button class="yes" onclick="closeM()">Yes, I want to save money!</button><br><br>
+<button class="no" onclick="closeM()">No thanks, I don't like saving money</button></div></div>
+
+<script>
+var s=600;setInterval(function(){s=s-1;if(s<0)s=600;var m=Math.floor(s/60),x=s%60;document.getElementById('t').textContent=(m<10?'0':'')+m+':'+(x<10?'0':'')+x;},1000);
+setTimeout(function(){document.getElementById('late').innerHTML='<b>43 people are looking at this hotel right now</b><br>Booked 17 times in the last 24 hours';},2000);
+function showM(){document.getElementById('modal').style.display='block';}
+function closeM(){document.getElementById('modal').style.display='none';setTimeout(showM,6000);}
+setTimeout(showM,3000);
+</script></body></html>

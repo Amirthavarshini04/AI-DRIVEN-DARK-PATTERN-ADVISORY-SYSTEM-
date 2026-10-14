@@ -1,0 +1,26 @@
+[
+  {
+    "sample_id": "HI-001",
+    "platform": "IndiaEcom-Demo",
+    "language": "hi",
+    "text_snippet": "केवल 3 स्टॉक में बचे हैं! तुरंत खरीदें!",
+    "context": "Product Page Banner",
+    "dark_pattern_category": "False Urgency",
+    "ccpa_reference": "Annexure 1 - Clause 3(a)",
+    "severity": "High",
+    "annotator_id": "ANNOTATOR-HI-01",
+    "split": "train"
+  },
+  {
+    "sample_id": "HI-002",
+    "platform": "IndiaEcom-Demo",
+    "language": "hi",
+    "text_snippet": "नहीं, मुझे पैसे बचाना पसंद नहीं है",
+    "context": "Checkout Opt-out Button",
+    "dark_pattern_category": "Confirm Shaming",
+    "ccpa_reference": "Annexure 1 - Clause 3(c)",
+    "severity": "Medium",
+    "annotator_id": "ANNOTATOR-HI-01",
+    "split": "test"
+  }
+]

@@ -1,0 +1,166 @@
+body {
+  width: 320px;
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.header {
+  background-color: #1e1b4b;
+  color: #ffffff;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-title h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.badge {
+  background-color: #4f46e5;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.content {
+  padding: 16px;
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.btn-secondary {
+  width: 100%;
+  background-color: #e2e8f0;
+  color: #334155;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.status-box {
+  padding: 10px;
+  background-color: #e0e7ff;
+  color: #3730a3;
+  border-radius: 6px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.score-val {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.risk-badge {
+  background-color: #fef2f2;
+  color: #dc2626;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.section-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.findings-container {
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.finding-item {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 6px;
+  font-size: 11px;
+}
+
+.finding-cat {
+  font-weight: bold;
+  color: #1e1b4b;
+}
+
+.finding-text {
+  color: #475569;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.footer {
+  padding: 10px 16px;
+  border-top: 1px solid #e2e8f0;
+  background: white;
+  text-align: center;
+}
+
+.footer-link {
+  color: #4f46e5;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 500;
+}

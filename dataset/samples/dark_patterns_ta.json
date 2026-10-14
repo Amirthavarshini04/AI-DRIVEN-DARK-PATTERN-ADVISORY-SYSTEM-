@@ -1,0 +1,26 @@
+[
+  {
+    "sample_id": "TA-001",
+    "platform": "TamilCart-Demo",
+    "language": "ta",
+    "text_snippet": "மின்னல் விற்பனை! இன்னும் 2 நிமிடங்கள் மட்டுமே!",
+    "context": "PDP Banner",
+    "dark_pattern_category": "False Urgency",
+    "ccpa_reference": "Annexure 1 - Clause 3(a)",
+    "severity": "High",
+    "annotator_id": "ANNOTATOR-TA-01",
+    "split": "train"
+  },
+  {
+    "sample_id": "TA-002",
+    "platform": "TamilCart-Demo",
+    "language": "ta",
+    "text_snippet": "இல்லை, எனக்கு தள்ளுபடி தேவையில்லை",
+    "context": "Opt-out Decline Link",
+    "dark_pattern_category": "Confirm Shaming",
+    "ccpa_reference": "Annexure 1 - Clause 3(c)",
+    "severity": "Medium",
+    "annotator_id": "ANNOTATOR-TA-01",
+    "split": "test"
+  }
+]
